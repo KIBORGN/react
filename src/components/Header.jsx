@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../img/logo.svg'
+import Images from '../components/Images'
 
 export default function Header() {
     return (
@@ -7,7 +7,7 @@ export default function Header() {
         <div class="header__wrapper">
             <div class="logo">
                 <a href="#" class="header__logo logo">
-                    <img src={image} alt='Logo'></img>
+                    <Images imageName="logo.svg" altText="Logo"/>
                 </a>
             </div>
             <nav class="header__nav nav">
