@@ -1,5 +1,7 @@
 import React from 'react'
 import Images from '../components/Images'
+import ItemHeading from '../components/ItemHeading'
+import CardItem from '../components/CardItem'
 
 
 export default function Main() {
@@ -37,8 +39,7 @@ export default function Main() {
 
         <section class="about">
             <div class="about__wrapper">
-                <h2 class="about__heading">About Us</h2>
-                <h3 class="about__subtitle">Our Teammate</h3>
+                <ItemHeading classH2 ="about__heading" classH3 ="about__subtitle" textH2 ="About Us" textH3 = "Our Teammate"/>
                 <div class="about__mate mate">
                     <Images imageName="mates.jpg" altText="Our teammate" className="mate__img"/>
                     <div class="mate__info">
@@ -57,56 +58,25 @@ export default function Main() {
         <section class="services">
             <div class="services__wrapper">
                 <div class="services__info">
-                    <h2 class="services__heading">Our Services</h2>
-                    <h3 class="services__subtitle">Perfect and Fast
-                        Movement</h3>
-                    <p class="services__text">We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business</p>
+                    <ItemHeading classH2 ="services__heading" classH3 ="services__subtitle" classP="services__text" textH2 ="Our Services" textH3 = "Perfect and Fast Movement" textP="We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have. make your content look interesting and make people look for your business"/>
                     <a href="#" class="services__link">Read more<Images imageName="arrow-right 1.svg" altText="Arrow" className="services__arrow"/></a>
                 </div>
                 <ul class="services__adv adv">
-                    <li class="adv__items">
-                        <Images imageName="white.svg" altText="Social Media Management" className="adv__image"/>
-                        <Images imageName="monitor.svg" altText="Monitor" className="adv__image--icon"/>
-                        <p class="adv__text">Social Media Management</p>
-                    </li>
-                    <li class="adv__items">
-                        <Images imageName="red.svg" altText="Search Engine Opimization" className="adv__image"/>
-                        <Images imageName="settings.svg" altText="Settings" className="adv__image--icon"/>
-                        <p class="adv__text">Search Engine Opimization</p>
-                    </li>
-                    <li class="adv__items">
-                        <Images imageName="green.svg" altText="Design" className="adv__image"/>
-                        <Images imageName="pen-tool.svg" altText="Pen" className="adv__image--icon2"/>
-                        <p class="adv__text">Design</p>
-                    </li>
-                    <li class="adv__items">
-                        <Images imageName="yellow.svg" altText="Ads" className="adv__image"/>
-                        <Images imageName="tv.svg" altText="Tv" className="adv__image--icon2"/>
-                        <p class="adv__text">Ads</p>
-                    </li>
+                    <CardItem post={{classLi: "adv__items",classImage: "adv__image", altImage: "Social Media Management",imageName: "white.svg", classImage2: "adv__image--icon", altImage2: "monitor.svg",imageName2: "tv.svg", pClass: "adv__text", pText: "Social Media Management"}} />
+                    <CardItem post={{classLi: "adv__items",classImage: "adv__image", altImage: "Search Engine Opimization",imageName: "red.svg", classImage2: "adv__image--icon", altImage2: "Settings",imageName2: "settings.svg", pClass: "adv__text", pText: "Search Engine Opimization"}} />
+                    <CardItem post={{classLi: "adv__items",classImage: "adv__image", altImage: "Design",imageName: "green.svg", classImage2: "adv__image--icon2", altImage2: "Pen",imageName2: "pen-tool.svg", pClass: "adv__text", pText: "Design"}} />
+                    <CardItem post={{classLi: "adv__items",classImage: "adv__image", altImage: "Ads",imageName: "yellow.svg", classImage2: "adv__image--icon2", altImage2: "Tv",imageName2: "tv.svg", pClass: "adv__text", pText: "Ads"}} />
                 </ul>
             </div>
         </section>
 
         <section class="portfolio">
             <div class="portfolio__wrapper">
-                <h2 class="portfolio__heading">Our Portfolio</h2>
-                <h3 class="portfolio__subtitle">What do we do</h3>
-                <p class="portfolio__text">all projects that we have already done , proven can help to use more comfortable, then can used by client from our business</p>
-                
+                <ItemHeading classH2 ="portfolio__heading" classH3 ="portfolio__subtitle" classP="portfolio__text" textH2 ="Our Portfolio" textH3 = "What do we do" textP="all projects that we have already done , proven can help to use more comfortable, then can used by client from our business"/>
                 <ul class="portfolio__app app">
-                    <li class="app__items">
-                        <Images imageName="byte-app.jpg" altText="Design Byte Ap" className="app__image"/>
-                        <p class="app__text">Design Byte App</p>
-                    </li>
-                    <li class="app__items">
-                        <Images imageName="cloud-app.jpg" altText="Cloud App" className="app__image"/>    
-                        <p class="app__text app__text--middle">Cloud App</p>
-                    </li>
-                    <li class="app__items">
-                        <Images imageName="furn-app.jpg" altText="Design Furniture App" className="app__image"/>
-                        <p class="app__text">Design Furniture App</p>
-                    </li>
+                    <CardItem post={{classLi: "app__items",classImage: "app__image", altImage: "Design Byte Ap",imageName: "byte-app.jpg", pClass: "app__text", pText: "Design Byte App"}} />
+                    <CardItem post={{classLi: "app__items",classImage: "app__image", altImage: "Cloud App",imageName: "cloud-app.jpg", pClass: "app__text app__text--middle", pText: "Cloud Ap"}} />
+                    <CardItem post={{classLi: "app__items",classImage: "app__image", altImage: "Design Furniture App",imageName: "furn-app.jpg", pClass: "app__text", pText: "Design Furniture App"}} />
                 </ul>
 
                 <a href="#" class="portfiolio__link">See All Portfolio</a>

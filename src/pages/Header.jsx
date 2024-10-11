@@ -1,5 +1,6 @@
 import React from 'react'
 import Images from '../components/Images'
+import CardLink from '../components/CardLink'
 
 export default function Header() {
     return (
@@ -12,10 +13,10 @@ export default function Header() {
             </div>
             <nav class="header__nav nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link nav__link--bold">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Sevices</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+                    <CardLink classItem="nav__item" classLink="nav__link nav__link--bold" textLink="Home"/>
+                    <CardLink classItem="nav__item" classLink="nav__link" textLink="About"/>
+                    <CardLink classItem="nav__item" classLink="nav__link" textLink="Sevices"/>
+                    <CardLink classItem="nav__item" classLink="nav__link" textLink="Projects"/>
                 </ul>
             </nav>
             <a href="#" class="functions__link">Contact us</a>

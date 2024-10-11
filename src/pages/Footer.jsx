@@ -1,5 +1,6 @@
 import React from 'react'
 import Images from '../components/Images'
+import CardLink from '../components/CardLink'
 
 export default function Footer() {
     return (
@@ -14,32 +15,32 @@ export default function Footer() {
                 <div class="nav__nav-additional nav-additional">
                     <h3 class="nav-additional__heading">Terms & policies</h3>
                     <ul class="nav-additional__list">
-                        <li class="nav-additional__item"><a href="#" class="nav-additional__link">Terms of Service</a></li>
-                        <li class="nav-additional__item"><a href="#" class="nav-additional__link">Privacy Policy</a></li>
+                        <CardLink classItem="nav-additional__item" classLink="nav-additional__link" textLink="Terms of Service"/>
+                        <CardLink classItem="nav-additional__item" classLink="nav-additional__link" textLink="Privacy Policy"/>
                     </ul>
                 </div>
                 <div class="nav__nav-additional nav-additional">
                     <h3 class="nav-additional__heading">Company</h3>
                     <ul class="nav-additional__list">
-                        <li class="nav-additional__item"><a href="#" class="nav-additional__link">Home</a></li>
-                        <li class="nav-additional__item"><a href="#" class="nav-additional__link">About Us</a></li>
-                        <li class="nav-additional__item"><a href="#" class="nav-additional__link">Contact Us</a></li>
+                        <CardLink classItem="nav-additional__item" classLink="nav-additional__link" textLink="Home"/>
+                        <CardLink classItem="nav-additional__item" classLink="nav-additional__link" textLink="About Us"/>
+                        <CardLink classItem="nav-additional__item" classLink="nav-additional__link" textLink="Contact Us"/>
                     </ul>
                 </div>
                 <div class="nav__nav-additional nav-additional">
                     <h3 class="nav-additional__heading">Contact</h3>
                     <ul class="nav-additional__list">
-                        <li class="nav-additional__item"><a href="#" class="nav-additional__link">(+62) 893912392190</a></li>
-                        <li class="nav-additional__item"><a href="#" class="nav-additional__link">agecnycr@gmail.com</a></li>
+                        <CardLink classItem="nav-additional__item" classLink="nav-additional__link" textLink="(+62) 893912392190"/>
+                        <CardLink classItem="nav-additional__item" classLink="nav-additional__link" textLink="agecnycr@gmail.com"/>
                     </ul>
                 </div>
                 <div class="nav__nav-additional nav-additional">
                     <h3 class="nav-additional__heading">Location</h3>
                     <ul class="nav-additional__list">
-                        <li class="nav-additional__item"><a href="#" class="nav-additional__link">PT Osiris Real Estate Internasional</a></li>
-                        <li class="nav-additional__item"><a href="#" class="nav-additional__link">Jl. KH. Wahid Hasyim Kel No.10D</a></li>
-                        <li class="nav-additional__item"><a href="#" class="nav-additional__link">Jakarta, Indonesia</a></li>
-                        <li class="nav-additional__item"><a href="#" class="nav-additional__link">team@OsirisRealEstate.com</a></li>
+                        <CardLink classItem="nav-additional__item" classLink="nav-additional__link" textLink="PT Osiris Real Estate Internasional"/>
+                        <CardLink classItem="nav-additional__item" classLink="nav-additional__link" textLink="Jl. KH. Wahid Hasyim Kel No.10D"/>
+                        <CardLink classItem="nav-additional__item" classLink="nav-additional__link" textLink="Jakarta, Indonesia"/>
+                        <CardLink classItem="nav-additional__item" classLink="nav-additional__link" textLink="team@OsirisRealEstate.com"/>
                     </ul>
                 </div>
             </nav>
