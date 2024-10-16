@@ -8,7 +8,7 @@ export default function Header() {
         <div class="header__wrapper">
             <div class="logo">
                 <a href="#" class="header__logo logo">
-                    <Images imageName="logo.svg" altText="Logo"/>
+                    <Images imageName="logo.svg"/>
                 </a>
             </div>
             <nav class="header__nav nav">
